@@ -5,8 +5,8 @@
 
 double pown(double value, uint16_t n) {
     uint64_t degreNum = value;
-    for (uint64_t i = 1; i < n; i++)
-        degreNum = degreNum*value;
+    for (uint64_t i = 2; i <= n; i++)
+        degreNum *= value;
     return degreNum;
 }
 
